@@ -1,0 +1,322 @@
+:root{
+    --background-color: #f0f2f4;
+    --text-color: #0b111e;
+    --menu-title-color: #0b111e;
+    --menu-title-color-rgb: rgb(13, 110, 253);
+    --box-background-color: #e6e6e6;
+    --box-background-color-rgb: rgb(230, 230, 230);
+}
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+i{
+    font-size: 24px;
+}
+
+body.dark {
+    --background-color: #0b111e;
+    --text-color: #f0f2f4;
+    --menu-title-color: #0d6efd;
+    --menu-title-color-rgb: rgb(13, 110, 253);
+    --box-background-color: #151c28;
+    --box-background-color-rgb: rgba(21, 28, 40);
+}
+
+/* ----------------- HEADER -------------- */
+.navbar-brand, nav .nav-link,a{
+    color: var(--text-color);
+}
+
+.nav-item #theme{
+    cursor: pointer;
+}
+.nav-item #theme i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.navbar-brand, 
+.navbar-brand:hover,
+.navbar-brand:active{
+    color: var(--text-color) !important;
+}
+
+.navbar{
+    background: var(--background-color);
+}
+
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--text-color);
+} 
+
+.nav-link.active {
+    color: var(--menu-title-color) !important;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 4px;
+}
+
+.navbar-toggler-icon {
+    color: var(--menu-title-color);
+}
+
+.navbar .navbar-toggler-icon {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28011, 94, 215, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ---------------- HOME --------------------- */
+
+.btn,
+.btn:active,
+.btn:hover {
+    border: none;
+    color: var(--text-color);
+}
+.btn.button-border,
+.btn.button-border:hover,
+.btn.button-outline:active {
+    color: var(--menu-title-color);
+    border: 1px solid var(--menu-title-color);
+}
+
+
+.photo{
+    width: 350px;
+    height: 300px;
+}
+.photo img{
+    border-radius: 100px 100px 50px 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ---------- */
+.social-media{
+    margin-right: 30px;
+}
+.social-media ul {
+    list-style: none;
+    margin: auto;
+}
+
+.social-media a.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 5px 0px;
+    padding: 5px 15px;
+    background: transparent;
+    transition: 300ms all ease;
+}
+
+.social-media ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--box-background-color);
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .social-media {
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .social-media ul {
+        display: flex;
+    }
+    .social-media ul li {
+        margin: 1px 3px;
+    }
+}
+
+/* ----------------- ABOUT ------------------- */
+
+.about-img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.about-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.boxs .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 100px;
+    background: var(--box-background-color);
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+
+.about-text{
+    color: var(--text-color);
+}
+
+/* ----------------- My Portfolio ------------------- */
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container .card {
+    max-width: 260px;
+    min-height: 100px;
+    max-height: 280px;
+    background: var(--box-background-color);
+}
+
+.card-title {
+    display: flex;
+    margin: 0;
+}
+.card-title span {
+    margin-left: auto;
+}
+
+.card-body .card-title-h6 {
+    font-size: 16px;
+    margin: 0;
+}
+.card-body .card-title a {
+    margin-left: auto;
+}
+.card-body .card-description{
+    font-size: 13px;
+    font-weight: 300;
+}
+.card-body .repo-info, .repo-info i {
+    font-size: 13px;
+}
+.card-body .repo-info{
+    display: flex;
+    align-items: center;
+}
+.repo-info p {
+    margin-left: auto;
+}
+.repo-info span{
+    margin: 0px 2px;
+}
+.repo-info span i{
+    margin: 0px 2px;
+}
+
+
+/* ---------------- MY EXPERIENCE (YETENEKLER)------------------- */
+
+.skills-container .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 320px;
+    padding: 25px;
+    background: var(--box-background-color);
+    margin: 15px;
+}
+
+.skills-content {
+    width: 100%;
+    height: 100%;
+}
+
+.skill-body ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.skill-body ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+}
+
+.skill-body ul li i {
+    margin-right: 5px;
+    font-size: 18px;
+    color: var(--menu-title-color);
+}
+
+.skill-body ul li span {
+    font-size: 12px;
+    position: absolute;
+    top: 30px;
+    left: 24px;
+}
+
+/* ------------ CONTACT (iletişim)-------------- */
+.form-group .form-control {
+    border: none !important;
+}
+
+@media (max-width: 390px) {
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+
+/* -------------- FOOTER------------------- */
+
+#btn-back-to-top{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    animation: backToTopButton 2.5s ease-in-out infinite;
+}
+@keyframes backToTopButton {
+    0%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
