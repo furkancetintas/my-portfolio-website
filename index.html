@@ -5,18 +5,506 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Furkan Çetintaş | Frontend Developer</title>
-    <!-- CSS only -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>FURKAN</h1>
+    <nav id="navbar_top" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Furkan Çetintaş</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hakkimda">Hakkımda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolyo">Portfolyo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#yetkinlikler">Yetkinlikler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bana-ulasin">Bana Ulaşın</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <span class="mt-2" id="theme">
+                <i class="bx bxs-sun"></i>
+              </span>
+            </li>
+          </ul>
+          <button class="btn btn-primary">Giriş Yap</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section id="home" class="mb-2">
+        <div class="row text-center py-4">
+          <div class="col-md-12 d-flex flex-column flex-wrap mt-5">
+            <span>Merhaba, Ben</span>
+            <h1 class="h2 fw-semibold">Furkan Enes Çetintaş</h1>
+            <h3 class="h6 fw-bold text-secondary mb-3">
+              Jr. Frontend Developer
+            </h3>
+            <div class="button-group">
+              <a href="#" class="btn button-border">CV</a>
+              <a href="#" class="btn btn-primary">Hakkımda</a>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-item-center justify-content-center my-5">
+          <div class="col-8">
+            <div class="row d-flex align-item-center justify-content-center">
+              <div class="col-12 col-md-1 social-media d-flex">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.linkedin.com/in/furkancetintas/"
+                      ><i class="bx bxl-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/furkancetintas"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/furkancetintas6/"
+                      ><i class="bx bxl-instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 photo">
+                <img src="assets/furkan-2.jpg" alt="Fotoğrafım" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-flex flex-column pt-5 pb-5" id="hakkimda">
+        <div class="row mx-5 text-center py-4">
+          <div class="col-12">
+            <span class="fw-lighter">About Me</span>
+            <h3 class="h3 fw-semibold">Hakkımda</h3>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+          <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+            <div class="about-img mb-4">
+              <img src="assets/furkan.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 mt-sm-5 col-md-6 mt-md-0 d-flex flex-column">
+            <div class="boxs d-flex">
+              <div class="box d-flex flex-column">
+                <div class="icon">
+                  <i class="bx bx-award text-primary"></i>
+                </div>
+                <h6>Tecrübe</h6>
+                <span class="fw-light" style="font-size: 12px">2 - 3 Ay</span>
+              </div>
+              <div class="box d-flex flex-column">
+                <div class="icon">
+                  <i class="bx bx-briefcase-alt text-primary"></i>
+                </div>
+                <h6>Tamamlanan</h6>
+                <span class="fw-light" style="font-size: 12px">1 Proje</span>
+              </div>
+              <div class="box d-flex flex-column">
+                <div class="icon">
+                  <i class="bx bx-support text-primary"></i>
+                </div>
+                <h6>Destek</h6>
+                <span class="fw-light" style="font-size: 12px"
+                  >Online 7/24</span
+                >
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-12 px-3">
+                <p class="about-text">
+                  Frontend Developer yolunda azimle ilerleyen
+                  <a
+                    href="https://www.instagram.com/furkancetintas6/"
+                    class="fw-bold text-primary"
+                    >@furkancetintas</a
+                  >
+                  'in websitesine hoşgeldin. React öğrenmeye başladım ve
+                  ilerleyen zamanlarda daha kaliteli bir site ile karşınızda
+                  olacağım.
+                </p>
+                <button class="btn btn-primary mt-4">İletişime Geç</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-flex flex-column pt-5 pb-5" id="portfolyo">
+        <div class="row mx-5 text-center py-4">
+          <div class="col-12">
+            <span class="fw-lighter">My Portfolio</span>
+            <h3 class="h3 fw-semibold text-primary">Projelerim</h3>
+          </div>
+        </div>
+        <div class="row card-container">
+          <!-- <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <h6 class="card-title-h6">Başlık gelecek</h6>
+                <a href=""><i class="bx bx-link-external"></i></a>
+              </div>
+              <h6 class="card-description">Açıklama yazısı</h6>
+              <div class="repo-info">
+                <p class="mb-0">
+                  <span> <i class="bx bx-star"></i> 2 </span>
+                  <span> <i class="bx bx-show"></i> 2 </span>
+                  <span> <i class="bx bx-git-repo-forked"></i> 10 </span>
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="d-flex flex-column pt-5 pb-5" id="yetkinlikler">
+        <div class="row mx-5 text-center py-5">
+          <div class="col-12">
+            <span class="fw-lighter">My Abilities</span>
+            <h3 class="h3 fw-semibold">Yeteneklerim</h3>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center skills-container">
+          <div class="col-md-5 card-container">
+            <div class="skills-content">
+              <div class="skill-title">
+                <h5 class="h5 text-center text-primary mb-4">
+                  Frontend Developer
+                </h5>
+              </div>
+              <div class="skill-body flex-wrap">
+                <ul class="d-flex list-unstyled">
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> HTML
+                    <span class="fw-light">Orta+</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Git
+                    <span class="fw-light">Orta</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> CSS
+                    <span class="fw-light">Orta+</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> GitHub
+                    <span class="fw-light">Orta+</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> JavaScript
+                    <span class="fw-light">Başlangıç+</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> React
+                    <span class="fw-light">Başlangıç</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Angular
+                    <span class="fw-light">Başlangıç</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Bootstrap
+                    <span class="fw-light">Orta+</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 card-container">
+            <div class="skills-content">
+              <div class="skill-title">
+                <h5 class="h5 text-center text-primary mb-4">UI/UX Designer</h5>
+              </div>
+              <div class="skill-body flex-wrap">
+                <ul class="d-flex list-unstyled">
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Figma
+                    <span class="fw-light">Orta</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Adobe Id
+                    <span class="fw-light">Orta</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Adobe Ai
+                    <span class="fw-light">Başlangıç</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Sketch
+                    <span class="fw-light">Başlangıç</span>
+                  </li>
+                  <li class="d-flex">
+                    <i class="bx bxs-badge-check"></i> Adobe Ps
+                    <span class="fw-light">Orta</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-flex flex-column pt-5 pb-5" id="bana-ulasin">
+        <div class="row mx-5 text-center py-4">
+          <div class="col-12">
+            <span class="fw-lighter">Contact Me</span>
+            <h3 class="h3 fw-semibold text-primary">Benimle İletişime Geç</h3>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between contact">
+          <div
+            class="col-10 col-md-6 d-flex justify-content-center my-3 mx-auto"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6119.648553046527!2d32.851178049999994!3d39.9229485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34effd6b9930b%3A0x6fa79cbeeeec0bac!2zS8SxesSxbGF5LCAwNjQyMCDDh2Fua2F5YS9BbmthcmE!5e0!3m2!1str!2str!4v1660514098579!5m2!1str!2str"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div
+            class="col-sm-12 mt-sm-5 col-md-6 mt-md-0 d-flex justify-content-center"
+          >
+            <div class="row justify-content-center my-3">
+              <div class="col-12 col-md-10">
+                <div class="contact-box text-center">
+                  <form id="contact-form">
+                    <div class="row d-flex justify-content-center">
+                      <div class="col-10 col-md-12">
+                        <div class="form-group mb-2">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Ad Soyad"
+                            required="required"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group mb-2">
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="E-Posta"
+                            required="required"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group mb-2">
+                          <input
+                            type="text"
+                            name="subject"
+                            placeholder="Konu"
+                            required="required"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group mb-2">
+                          <input
+                            type="tel"
+                            name="telephone"
+                            placeholder="Telefon"
+                            required="required"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group mb-2">
+                          <textarea
+                            name="message"
+                            placeholder="Mesaj"
+                            style="resize: none"
+                            required="required"
+                            class="form-control"
+                            rows="6"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-10 col-md-12">
+                        <div class="form-group">
+                          <input
+                            type="file"
+                            id="choose-file"
+                            name="file"
+                            required="required"
+                            class="form-control choose-file"
+                            hidden
+                          />
+                          <label
+                            class="form-control choose-file d-flex align-items-center justify-content-center"
+                            for="choose-file"
+                            >Dosya Seç</label
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-12 d-flex align-items-center justify-content-center"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-primary d-flex align-items-center justify-content-center mt-3"
+                        >
+                          <span class="text-white pr-3">
+                            <i class="bx bxs-paper-plane text-white"></i>
+                          </span>
+                          Mesaj Gönder
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <p class="form-message"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="pt-5">
+        <div class="row">
+          <div class="col-3 col-md-2 mb-3">
+            <h5>Furkan</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Anasayfa</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Hakkımda</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Portfolyo</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Yetkinlikler</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Bana Ulaşın</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-3 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Anasayfa</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Hakkımda</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Portfolyo</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Yetkinlikler</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Bana Ulaşın</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-7 offset-md-1 mb-3">
+            <form>
+              <h5>Haber Bültenimize Abone Ol</h5>
+              <p>Benden yeni ve heyecan verici şeylerin aylık özeti.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">E-Posta</label>
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="E-Posta Adresin"
+                />
+                <button
+                  class="btn btn-primary"
+                  style="width: 120px"
+                  type="button"
+                >
+                  Abone ol
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top position-relative"
+        >
+          <p>© 2022 Furkan Çetintaş, Tüm Hakları Saklıdır.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-dark" href="#"> </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use></svg
+              ></a>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="btn btn-primary d-flex align-item-center"
+            id="btn-back-to-top"
+          >
+            <i class="bx bx-chevrons-up"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
