@@ -127,6 +127,9 @@ theme.onclick = () => {
 };
 if (localStorage.getItem('theme') != '') {
   document.body.classList.add(localStorage.getItem('theme'));
+  theme.innerHTML = '<i class="bx bxs-moon"></i>';
+} else {
+  theme.innerHTML = '<i class="bx bxs-sun"></i>';
 }
 console.log(window.location);
 
