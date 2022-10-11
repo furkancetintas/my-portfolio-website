@@ -43,8 +43,6 @@ body.dark {
 }
 .nav-item #theme i {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-right: 6px;
 }
 
@@ -318,5 +316,15 @@ body.dark {
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+
+
+/* --------------- MOBILE ------------------ */
+@media screen and (max-width: 768px) {
+    .nav-item #theme i {
+        margin-bottom: 10px;
+        margin-right: 6px;
     }
 }
