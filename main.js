@@ -120,16 +120,16 @@ theme.onclick = () => {
   localStorage.setItem('theme', document.body.classList);
   if (localStorage.getItem('theme') != '') {
     document.body.classList.add(localStorage.getItem('theme'));
-    theme.innerHTML = '<i class="bx bxs-moon"></i>';
-  } else {
     theme.innerHTML = '<i class="bx bxs-sun"></i>';
+  } else {
+    theme.innerHTML = '<i class="bx bxs-moon"></i>';
   }
 };
 if (localStorage.getItem('theme') != '') {
   document.body.classList.add(localStorage.getItem('theme'));
-  theme.innerHTML = '<i class="bx bxs-moon"></i>';
-} else {
   theme.innerHTML = '<i class="bx bxs-sun"></i>';
+} else {
+  theme.innerHTML = '<i class="bx bxs-moon"></i>';
 }
 console.log(window.location);
 
